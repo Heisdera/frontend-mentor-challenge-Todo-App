@@ -42,9 +42,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/responsive-sign-up-form-using-css-flexbox-qhgnnrTtxT)
-- Live Site URL: [Github](https://heisdera.github.io/frontend-mentor-challenge-signup-form/)
-- Live Site URL: [Vercel](https://frontend-mentor-challenge-signup-form.vercel.app/)
+- Solution URL: [solution URL](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW/hub)
+- Live Site URL: [Vercel](https://frontend-mentor-challenge-todo-app.vercel.app/)
 
 ## My process
 
