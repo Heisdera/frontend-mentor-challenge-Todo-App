@@ -66,7 +66,7 @@ Still learning React and Redux, I would have love to store all the states using 
 
 ### Useful resources
 
-- React
+- [Code magic](https://code-magic.vercel.app/). It really helped me when i struggled to give the unchecked todo circle a gradient border color on hover state. It was a very helpful because i just had to input the different colors then it generated the css code which i used.
 
 ## Author
 
