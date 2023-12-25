@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Todo-App completion screenshot](./public/screenshot.png)
+![Todo-App completion screenshot](./public/Screenshot.png)
 
 ### Links
 
