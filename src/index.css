@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+:root {
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Check-Background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+
+  --primary-color: #fff;
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue-hover: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  height: 90vh;
+  max-width: 1440px;
+  margin: auto;
+  background: #000;
+  color: var(--Light-Grayish-Blue);
+  font-size: 1rem;
+  line-height: 1.25;
+  transition: background-image 0.2s ease-out;
+}
+
+body[data-theme='dark'] {
+  --Check-Background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --primary-color: #fff;
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Light-Grayish-Blue: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+  --Very-Dark-Grayish-Blue-hover: hsl(234, 11%, 52%);
+  --image-url: url('./bg-desktop-dark.jpg');
+  --background-color: hsl(235, 21%, 11%);
+
+  background: var(--background-color);
+  background-image: var(--image-url);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 40%;
+}
+
+body[data-theme='light'] {
+  --Check-Background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  --primary-color: #fff;
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: var(--primary-color);
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Light-Grayish-Blue: hsl(233, 14%, 35%);
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
+  --Very-Dark-Grayish-Blue: hsl(234, 39%, 85%);
+  --Very-Dark-Grayish-Blue-hover: hsl(234, 39%, 85%);
+  --image-url: url('./bg-desktop-light.jpg');
+  --background-color: hsl(236, 33%, 92%);
+
+  background: var(--background-color);
+  background-image: var(--image-url);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100% 40%;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: var(--Very-Dark-Grayish-Blue-hover);
+}
+
+.container {
+  margin: 10vh auto 0;
+  width: 540px;
+  font-size: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  letter-spacing: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  margin-top: 30px;
+}
+
+main .input {
+  width: 100%;
+  background: var(--Very-Dark-Desaturated-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 5px;
+}
+
+main input {
+  align-self: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 50px;
+  color: var(--Light-Grayish-Blue);
+  width: 90%;
+}
+
+main .box {
+  margin-top: 30px;
+  width: 100%;
+  background: var(--Very-Dark-Desaturated-Blue);
+  border-radius: 5px 5px 0 0;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid var(--Very-Dark-Grayish-Blue);
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+ul li p {
+  width: 100%;
+  margin-top: 3px;
+}
+
+.input-circle {
+  width: 24.3px;
+  height: 24px;
+  background-color: none;
+  border-radius: 50%;
+  border: 2px solid var(--Very-Dark-Grayish-Blue);
+  margin-left: 19px;
+  margin-right: 18px;
+}
+
+.todo-circle,
+.checked-todo-circle {
+  width: 28px;
+  height: 24.24px;
+  background-color: none;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--Very-Dark-Grayish-Blue);
+  margin-left: 19px;
+  margin-right: 18px;
+  margin-top: 7.3px;
+  margin-bottom: 7.3px;
+  position: relative;
+}
+
+.todo-circle:hover {
+  border: none;
+  width: 28.4px;
+  height: 24.24px;
+}
+
+.todo-circle:hover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  outline-offset: 5px;
+  padding: 2px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  background: rgba(0, 0, 0, 0) var(--Check-Background) repeat scroll 0% 0% /
+    auto padding-box border-box;
+  -webkit-background-clip: 'border-box';
+  background-clip: 'border-box';
+  border-radius: 50%;
+}
+
+.checked-todo-circle {
+  border: none;
+  margin-right: 19px;
+  background: var(--Check-Background);
+}
+
+.checked-todo-circle svg {
+  position: absolute;
+  top: 8px;
+  left: 7px;
+}
+
+ul li i:last-of-type {
+  margin-top: 5px;
+}
+
+ul li:last-of-type {
+  border: none;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 20px;
+  color: var(--Dark-Grayish-Blue);
+  background: var(--Very-Dark-Desaturated-Blue);
+  border-top: 1px solid var(--Very-Dark-Grayish-Blue);
+  border-radius: 0 0 5px 5px;
+}
+
+.stat div {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.stat div span:hover {
+  color: var(--Light-Grayish-Blue);
+}
+
+.stat div span.active {
+  color: var(--Bright-Blue);
+}
+
+.stat p:last-of-type {
+  cursor: pointer;
+}
+
+.stat p:last-of-type:hover {
+  color: var(--Light-Grayish-Blue);
+}
+
+.drag {
+  margin: 30px auto 30px;
+  text-align: center;
+  color: hsl(234, 11%, 52%);
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  margin-left: 4px;
+}
+
+@media screen and (max-width: 769px) {
+  body[data-theme='dark'],
+  body[data-theme='light'] {
+    background-size: 100% 30%;
+  }
+
+  .container {
+    margin: 7vh auto 0;
+    width: 540px;
+    font-size: 16px;
+  }
+
+  .logo {
+    letter-spacing: 10px;
+    font-size: 2.6rem;
+  }
+
+  main .input {
+    height: 70px;
+  }
+
+  main input {
+    font-size: 18px;
+    height: 70px;
+  }
+
+  ul li {
+    height: 70px;
+  }
+
+  .todo-circle,
+  .checked-todo-circle {
+    width: 27.3px;
+    height: 24.3px;
+  }
+
+  .checked-todo-circle svg {
+    position: absolute;
+    top: 8px;
+    left: 7.2px;
+  }
+
+  ul li p {
+    font-size: 18px;
+  }
+
+  .stat {
+    padding: 0 30px;
+    position: relative;
+  }
+
+  .stat div {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    width: 100%;
+    background: var(--Very-Dark-Desaturated-Blue);
+    padding: 20px;
+    justify-content: space-evenly;
+    font-size: 20px;
+  }
+
+  .drag {
+    margin: 120px auto 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    width: 380px;
+    font-size: 16px;
+  }
+
+  .logo {
+    letter-spacing: 10px;
+    font-size: 2.3rem;
+  }
+
+  main .input {
+    height: 60px;
+  }
+
+  main input {
+    font-size: 15px;
+    height: 60px;
+  }
+
+  ul li {
+    height: 60px;
+  }
+
+  ul li p {
+    font-size: 15px;
+  }
+
+  .todo-circle,
+  .checked-todo-circle {
+    width: 30px;
+  }
+
+  .todo-circle:hover {
+    width: 31px;
+  }
+
+  .checked-todo-circle svg {
+    left: 7px;
+  }
+
+  .stat div {
+    font-size: 18px;
+  }
+
+  .drag {
+    margin: 110px auto 20px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container {
+    width: 360px;
+    font-size: 16px;
+  }
+
+  .logo {
+    letter-spacing: 10px;
+    font-size: 2rem;
+  }
+
+  main .input {
+    height: 50px;
+  }
+
+  main input {
+    font-size: 15px;
+    height: 50px;
+  }
+
+  ul li {
+    height: 50px;
+  }
+
+  ul li p {
+    font-size: 15px;
+  }
+}
