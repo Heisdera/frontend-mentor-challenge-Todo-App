@@ -42,7 +42,7 @@ body[data-theme='dark'] {
   --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
   --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
   --Very-Dark-Grayish-Blue-hover: hsl(234, 11%, 52%);
-  --image-url: url('./bg-desktop-dark.jpg');
+  --image-url: url('./public/bg-desktop-dark.jpg');
   --background-color: hsl(235, 21%, 11%);
 
   background: var(--background-color);
@@ -62,7 +62,7 @@ body[data-theme='light'] {
   --Light-Grayish-Blue-hover: hsl(236, 33%, 92%);
   --Very-Dark-Grayish-Blue: hsl(234, 39%, 85%);
   --Very-Dark-Grayish-Blue-hover: hsl(234, 39%, 85%);
-  --image-url: url('./bg-desktop-light.jpg');
+  --image-url: url('./public/bg-desktop-light.jpg');
   --background-color: hsl(236, 33%, 92%);
 
   background: var(--background-color);
